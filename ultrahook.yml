@@ -4,7 +4,7 @@ services:
   # ultrahook service uses config file
     ultrahook:
       image: usgsastro/ultrahook:latest
-      env-file: /var/lib/dockervols/ultrahook/config.yml
+      env_file: /var/lib/dockervols/ultrahook/config.yml
       restart: unless-stopped
       deploy:
         mode: replicated
